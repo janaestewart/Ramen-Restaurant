@@ -1,0 +1,215 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.logo {
+  height: 10%;
+  width: 10%;
+  margin-left: 100px;
+}
+
+header{
+  display: flex;
+  align-items: center;
+
+}
+
+nav{
+  flex-grow: 2;
+}
+
+.navItem{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  margin-left: 180px;
+}
+
+.top {
+  background-image: url('https://www.nayati-bds.be/wp-content/uploads/2020/11/cuisine-chinoise-4-scaled.jpeg');
+  /* background-image: url(https://miro.medium.com/max/7940/1*fU9p6Wv6oHpjwMe5OO2UsA.jpeg); */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  opacity: .8;
+}
+
+
+#about-Us{
+  height: 500px;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+}
+
+.aboutUs{
+  font-weight: 600;
+  font-size: 2.5rem;
+  justify-content: center;
+  margin-left: 40%;
+}
+
+#about-Us h3 {
+  font-weight: 500;
+  font-size: 2.3rem;
+  margin-left: 32%;
+}
+
+#about-Us p {
+  font-size: 1.2rem;
+}
+
+.last-about {
+  border-bottom: .5px black solid;
+  padding-bottom: 5%;
+}
+
+#menu {
+  height: 800px;
+  margin: auto;
+  justify-content: center;
+  width: 100%;
+}
+
+#menu h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  justify-content: center;
+  margin-left: 47%;
+}
+
+#menuGallery {
+  display: grid;
+  grid-template-columns: repeat(4, 210px);
+  grid-gap: 20px;
+  margin-left: 17%;
+}
+
+figure {
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50%;
+}
+
+#menu img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-desc{
+  text-align: center;
+}
+
+footer{
+  background-color: rgb(175, 175, 175);
+  text-align: center;
+}
+
+.footer-contain{
+  margin: auto;
+  padding: 1% 0;
+  width: 50%;
+}
+
+/* footer h2{
+  text-align: center;
+} */
+
+
+
+/* .mainContain{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+} */
+
+/* #about-Us{
+  display: block;
+  position: absolute;
+  justify-content: center;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+} */
+
+
+/* #menuGallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: .5rem; 
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.gallery-item-1{
+  grid-column: 1 / span 2; 
+  grid-row: 1 / span 2;
+} */
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/*Media Queries*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
